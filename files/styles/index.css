@@ -1,0 +1,147 @@
+#profile {
+    height: 128px;
+    width: 128px;
+    border: solid;
+    border-radius: 50%;
+    margin-top: 3%;
+}
+
+.text-box {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+}
+
+.fixed-text {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.animated-text {
+    display: inline-block;
+    height: 113px;
+    overflow: hidden;
+}
+
+.animated-text span {
+    position: relative;
+    display: block;
+}
+
+.animated-text span:hover {
+    color: blue;
+}
+
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border-left: 2px solid #02095a;
+    right: -2px;
+    background-color: #ffffff;
+    animation: 5s textType;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(33);
+    animation-fill-mode: backwards;
+}
+
+@keyframes textType {
+    0%{
+        left: 0;  
+      }
+      50%{
+        left: 100%;  
+      }
+      65%{
+        left: 100%;  
+      }
+      100%{
+        left: 0;  
+      }
+      0%{
+        left: 0;  
+      }
+}
+
+#des {
+    font-size: 33px;
+}
+
+#des:hover {
+    font-size: 40px;
+}
+
+.social-media {
+    height: 32px;
+    width: 32px;
+    border: #000000 solid 1px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.social-media:hover {
+    height: 38px;
+    width: 38px;
+    border: #ffff00;
+}
+
+#menu-button {
+    height: 64px;
+    width: 128px;
+    border: white;
+}
+
+#menu {
+    height: 40px;
+    width: 40px;
+    border-radius: 0;
+}
+
+#menu:hover {
+    height: 40px;
+    width: 40px;
+    border-radius: 0;
+    border: 0;
+    box-shadow: black;
+}
+
+.items {
+    border: #000000 solid 2px;
+    border-radius: 20px;
+    height: 180px;
+    width: 150px;
+    margin-left: 20px;
+    background-color: #e2f2fe;
+    margin-top: 10px;
+}
+
+.item-image {
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.download {
+    background-color: blue;
+    color: #ffffff;
+}
+.view {
+    background-color: red;
+    color: #ffffff;
+}
+
+.download:hover {
+    background-color: #000099;
+}
+
+.view:hover {
+    background-color: #8d0000;
+}
+
+#items {
+    display: flex;
+}
